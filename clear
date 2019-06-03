@@ -1,0 +1,2 @@
+rm -r output/*.html
+rm -r output/author output/category output/images output/theme output/Art output/feeds output/tag output/files

@@ -1,0 +1,11 @@
+# Disallow everything.
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Allow: /about.html
+Allow: /index.html
+Allow: /Art/
+
+User-agent: Twitterbot
+Allow: /images

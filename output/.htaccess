@@ -1,0 +1,36 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule (.*) https://%{HTTP_HOST}/$1 [R=301,L]
+
+
+RewriteRule ^index.php$ /index.html [R=301, L]
+
+RewriteRule ^aboutme/aboutme/aboutme.php$ /about.html [R=301, L]
+RewriteRule ^aboutme/cv/cv.php$ /about.html#CurriculumVitae [R=301, L]
+RewriteRule ^aboutme/work/work.php$ /about.html#Hiring [R=301, L]
+RewriteRule ^aboutme/exhibitions/exhibitions.php$ /index.html [R=301, L]
+RewriteRule ^aboutme/papers/papers.php$ /index.html [R=301, L]
+RewriteRule ^aboutme/mydigitalego/mydigitalego.php$ /about.html#OnlinePresence [R=301, L]
+RewriteRule ^aboutme/portfolio/portfolio.php$ /index.html [R=301, L]
+
+RewriteRule ^aboutme/portfolio/files/biography.pdf$ /index.html [R=301, L]
+RewriteRule ^aboutme/portfolio/files/cv_longversion.pdf$ /files/cv_longversion.pdf [R=301, L]
+RewriteRule ^aboutme/portfolio/files/cv_shortversion.pdf$ /files/cv_longversion.pdf [R=301, L]
+RewriteRule ^aboutme/portfolio/files/exhibitions.pdf$ /index.html [R=301, L]
+RewriteRule ^aboutme/portfolio/files/papers_longversion.pdf$ /index.html [R=301, L]
+RewriteRule ^aboutme/portfolio/files/papers_shortversion.pdf$ /index.html [R=301, L]
+RewriteRule ^aboutme/portfolio/files/mydigitalego.pdf$ /about.html#OnlinePresence [R=301, L]
+RewriteRule ^aboutme/portfolio/files/hiring-manual.pdf$ /files/hiring-manual.pdf [R=301, L]
+
+RewriteRule ^projects/projects.php$ /index.html [R=301, L]
+
+RewriteRule ^art/art.php$ /index.html [R=301, L]
+
+RewriteRule ^writing/writing.php$ /about.html#OnlinePresence [R=301, L]
+RewriteRule ^writing/asterisk-and-polis/asterisk-and-polis.php$ /about.html#OnlinePresence [R=301, L]
+
+RewriteRule ^contact/contact.php$ /contact.html [R=301, L]
+
+RewriteRule ^imprint/imprint.php$ /legal-disclosure.html [R=301, L]
+RewriteRule ^imprint/imprint.php#privacypolicy$ /privacy-policy.html [R=301, L]
+RewriteRule ^imprint/imprint.php#disclaimer$ /disclaimer.html [R=301, L]

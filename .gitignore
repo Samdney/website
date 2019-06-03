@@ -1,0 +1,7 @@
+/mystuff
+/content/blog/drafts
+/content/blog/draft-*
+*.pid
+*.swp
+*.pyc
+*/*/.goutputstream*
